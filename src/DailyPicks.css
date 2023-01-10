@@ -1,0 +1,148 @@
+
+.dailyPicks{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    border-radius:30px;
+}
+
+.stocks{
+    display:flex;
+    /* margin-left:30vw; */ 
+    /* width:50vw; */
+    justify-content:center;
+
+}
+.stock img{    
+    height:8vh;
+    width:7vw;
+    border-radius:20px;
+    margin-bottom:10px;
+    object-fit: contain;
+}
+.stock{
+    margin:3px;
+}
+.dailyPicks_text{
+    font-size:1rem;
+}
+.stock p{
+    /* margin-left:12px; */
+    font-size:1.2rem;
+    font-weight:600;
+    text-align:center;
+}
+.arrow_up,.arrow_down{
+    object-fit:contain;
+    cursor:pointer;
+}
+.playfair_logoo{
+    /* border:1px solid; */
+    height:50px;
+    width:50px;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+}
+.submit
+{
+    background-color: #009463;
+    color:white;
+    padding:5px;
+    border-radius:10px;
+    margin-top:15vh;
+    cursor:pointer;
+    border:none;
+    /* padding:10px; */
+    font-size:1.2rem;
+    /* margin-left:50%; */
+    /* top:10vh; */
+    /* position: absolute; */
+}
+.arrow_container{
+    position:relative;
+}
+.arrow_down{
+    position: absolute;
+}
+.arrow_up{
+    position:absolute;
+}
+.arrow_inactive{
+    /* position: absolute; */
+    display:none;
+}
+.arrow_active{
+    /* position: absolute; */
+    display:block;
+}
+
+.dailyPicks h2{
+    display:flex;
+    justify-content:center;
+}
+
+
+
+@media screen and (max-width:500px) {
+    
+    .dailyPicks{
+        width:100vw;
+    }
+    .stock img{
+        width:20vw;
+        height:20vw;
+    }
+    .stock p{
+        margin-left: 0px;
+        text-align:center;
+    }
+    /* .submit{
+        margin-top:30vh;
+    } */
+    /* .stock_img{
+        object-fit: contain;
+        height:200px;
+        width:200px;
+    }
+    .stock{
+        display: flex;
+        flex-direction:column;
+    } */
+}
+
+@media only screen and (min-width:700px){
+    .dailyPicks{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        border-radius:30px;
+        border: 1px solid; 
+        width:50%;
+        margin:0 auto;
+        border-radius:30px;
+        border: 1px solid;
+        padding-bottom: 20px;
+        background: rgba(255, 255, 255, 0.67);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(15.1px);
+    -webkit-backdrop-filter: blur(15.1px);
+    border: 1px solid rgba(255, 255, 255, 0.68);
+        /* background-color: red; */
+    }
+    
+}
+
+
+@media only screen and (max-width:900px) and (min-width:500px){
+    .stock img{
+        width:14vw;
+        height:7vh;
+    }
+
+    .submit{
+        margin-top:10vh;
+    }
+}
